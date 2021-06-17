@@ -41,12 +41,14 @@ h1 {
   <h1>User Details</h1>
 <table>
 <tr>
+<th>ID</th>
 <th>Name</th>
 <th>Age</th>
 <th>Location</th>
 </tr>
 {% for users in user %}
 <tr>
+<td>{{ users['userid']}}</td>
 <td>{{ users['name']}}</td>
 <td>{{ users['age'] }}</td>
 <td>{{ users['location'] }}</td>
