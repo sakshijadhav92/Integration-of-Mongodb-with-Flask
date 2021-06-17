@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#grad1 {
+  height: 500px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(red, blue);
+}
+h1 {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  text-align: center;
+}
+  div{
+  margin: auto;
+  width: 60%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+    text-align: center;
+  }
+</style>
+</head>
+<body id="grad1">
+
+<h1>Remove User Details</h1>
+<div ><form action='/remove' method="POST">
+ <br>
+  <input name='x' placeholder="Enter Name"/>
+<br><br>
+
+<input type="submit" value="Remove Record">
+  <br><br>
+</form>
+  
+  </div>
+  </body>
+</html>
