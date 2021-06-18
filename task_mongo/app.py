@@ -13,12 +13,14 @@ user_collection = dbmongo.db.users
 @app.route("/userform")
 def userform():
    return render_template('user.html')
-   
-@app.route("/adddata", methods=['POST'])  #GET --->POST
+
+# for POST --> request.form.get()
+# for GET --> request.args.get()
+@app.route("/adddata", methods=['POST'])  
 def add_data():
     if request.method == 'POST':
         userid = request.form.get("a")
-        name = request.form.get("x")   #args--->form
+        name = request.form.get("x")   
         age = request.form.get("y")
         loc = request.form.get("z")
         if userid != "" and name != "" and age != "" and loc != "":
