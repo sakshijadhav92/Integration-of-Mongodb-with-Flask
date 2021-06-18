@@ -7,7 +7,7 @@ app = Flask("myapp")
 app.config["MONGO_URI"] = "mongodb://127.0.0.1:27017/mydb"
 #initializing the client for mongodb
 dbmongo = PyMongo(app)
-#creating the user collection(
+#creating the user collection
 user_collection = dbmongo.db.users
 
 @app.route("/userform")
@@ -47,5 +47,5 @@ def delete():
             return "Record deleted"
         else:
             return "Kindly Enter ID"
-            
+
 app.run(port=5555,debug=True)
