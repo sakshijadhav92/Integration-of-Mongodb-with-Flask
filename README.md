@@ -2,4 +2,4 @@
 
 Detailed Description :
 
-https://sakshijadhav792.medium.com/integrating-mongodb-with-flask-fe014ad34126
+https://medium.com/@sakshijadhav1317/integrating-mongodb-with-flask-39988a82c172
